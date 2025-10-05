@@ -1,0 +1,148 @@
+/*
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+  color: #fff;
+}
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-bg: #09090b;
+  --secondary-bg: #141319;
+  --tertiary-bg: #17171c;
+}
+
+.sp-text {
+  background: conic-gradient(at top, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.icon {
+  padding: 15px;
+  font-size: 20px;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  background-color: var(--secondary-bg);
+  cursor: pointer;
+}
+  */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Theme Colors */
+:root {
+  --primary-bg: #09090b;
+  --secondary-bg: #141319;
+  --tertiary-bg: #17171c;
+}
+
+/* Gradient Text */
+.sp-text {
+  background: conic-gradient(at top, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navbar and Icon Styling */
+.icon {
+  padding: 12px;
+  font-size: 20px;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  background-color: var(--secondary-bg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #1f1f23;
+  transform: scale(1.05);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .icon {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .sp-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .icon {
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 8px;
+  }
+
+  .sp-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 6px;
+  }
+
+  .sp-text {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
